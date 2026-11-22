@@ -29,7 +29,7 @@ import org.springframework.transaction.annotation.Transactional;
 @ConditionalOnProperty(name = "app.seed-demo-data", havingValue = "true")
 public class DemoDataSeeder implements CommandLineRunner {
     private static final Logger log = LoggerFactory.getLogger(DemoDataSeeder.class);
-    private static final String HALL = "Atelier Nahal, 12 Hillel St, Jerusalem";
+    private static final String HALL = "Atelier Nahal, 7 Indigo Lane, Rivertown";
 
     private final UserRepository users;
     private final StudioClassRepository classes;

@@ -48,7 +48,7 @@ export default function Layout() {
       <footer className="foot">
         <div className="wrap foot-in">
           <Logo />
-          <p>12 Hillel St, Jerusalem. Small groups of up to 14, all materials included.</p>
+          <p>7 Indigo Lane, Rivertown. Small groups of up to 14, all materials included.</p>
           <p className="foot-note">Demo project: payments are simulated and no card is ever charged.</p>
         </div>
       </footer>

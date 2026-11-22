@@ -19,6 +19,12 @@ Full-stack booking platform for a small art studio: browse classes, hold seats, 
 | Admin panel | KPIs, seat fill and revenue per medium, class CRUD (hide instead of delete), all bookings with cancel and refund |
 | GenAI assistant | Chat that answers from the real schedule: retrieval over upcoming classes, then Gemini on Vertex AI writes the answer; works offline without a key |
 
+## Screenshots
+
+<p align="center"><img src="docs/screenshots/classes.png" alt="Class catalogue with medium, level and price filters" width="860"></p>
+<p align="center"><img src="docs/screenshots/home.png" alt="Home page: pick a medium and see the next sessions with live seat counts" width="860"></p>
+<p align="center"><img src="docs/screenshots/login.png" alt="Log in page with one-click demo accounts" width="860"></p>
+
 ## Quick start
 
 Requirements: JDK 17, Maven 3.9+, Node 20+.

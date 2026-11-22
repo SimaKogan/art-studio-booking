@@ -31,7 +31,7 @@ export default function Home() {
           <div className="hero-copy">
             <h1>Make something with your hands this week.</h1>
             <p className="lede">
-              Painting, watercolor, ceramics and drawing in small groups, in the middle of Jerusalem.
+              Painting, watercolor, ceramics and drawing in small groups, in the middle of town.
               Choose a session, pay online and turn up. Everything you need is on the table.
             </p>
             <div className="hero-cta">

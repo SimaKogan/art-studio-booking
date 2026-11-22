@@ -10,7 +10,7 @@ const blank = (): ClassInput => {
   const local = new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
   return {
     title: '', description: '', category: 'PAINTING', level: 'ALL_LEVELS', instructor: '',
-    location: 'Atelier Nahal, 12 Hillel St, Jerusalem', startsAt: local, durationMinutes: 120,
+    location: 'Atelier Nahal, 7 Indigo Lane, Rivertown', startsAt: local, durationMinutes: 120,
     priceCents: 18000, capacity: 10, active: true,
   };
 };

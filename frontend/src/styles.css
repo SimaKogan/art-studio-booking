@@ -106,6 +106,8 @@ button { cursor: pointer; }
 .chip-body { padding: 12px 14px 16px; display: grid; gap: 2px; font-size: 0.9rem; }
 .chip-body b { font: 700 1.02rem var(--font-display); line-height: 1.2; }
 .chip-body span { color: var(--muted); }
+.chip-0 .chip-body b, .chip-1 .chip-body b { display: block; max-width: 104px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chip:hover .chip-body b, .chip:focus-visible .chip-body b { max-width: none; white-space: normal; }
 .chip-skel { --x: 60px; --y: 40px; --r: -3deg; height: 330px; background: #e3e4dd; animation: none; }
 @keyframes fan-out {
   from { transform: translate(120px, 50px) rotate(0deg); opacity: 0; }

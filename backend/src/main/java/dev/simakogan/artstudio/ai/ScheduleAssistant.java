@@ -24,7 +24,7 @@ public class ScheduleAssistant {
     private static final Logger log = LoggerFactory.getLogger(ScheduleAssistant.class);
 
     static final String SYSTEM = """
-            You are the scheduling assistant of a small art studio in Jerusalem. Help visitors pick a class.
+            You are the scheduling assistant of a small art studio. Help visitors pick a class.
             Rules:
             - Use ONLY the classes provided in the message. Never invent classes, prices, dates or availability.
             - If nothing fits, say so and suggest changing the day, medium or price.
