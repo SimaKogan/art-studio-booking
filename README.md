@@ -21,9 +21,20 @@ Full-stack booking platform for a small art studio: browse classes, hold seats, 
 
 ## Screenshots
 
-<p align="center"><img src="docs/screenshots/classes.png" alt="Class catalogue with medium, level and price filters" width="860"></p>
-<p align="center"><img src="docs/screenshots/home.png" alt="Home page: pick a medium and see the next sessions with live seat counts" width="860"></p>
-<p align="center"><img src="docs/screenshots/login.png" alt="Log in page with one-click demo accounts" width="860"></p>
+<table align="center">
+  <tr>
+    <td width="50%"><img src="docs/screenshots/classes.png" alt="Class catalogue with medium, level and price filters"></td>
+    <td width="50%"><img src="docs/screenshots/home.png" alt="Home page: pick a medium and see the next sessions with live seat counts"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/checkout.png" alt="Checkout with the simulated card payment and a 15-minute seat hold"></td>
+    <td width="50%"><img src="docs/screenshots/assistant.png" alt="GenAI assistant answering from the real schedule with bookable suggestions"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/class.png" alt="Class detail with live seat availability"></td>
+    <td width="50%"><img src="docs/screenshots/bookings.png" alt="My bookings with status and cancellation"></td>
+  </tr>
+</table>
 
 ## Quick start
 

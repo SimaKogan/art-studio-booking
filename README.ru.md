@@ -19,8 +19,20 @@
 
 ## Скриншоты
 
-<p align="center"><img src="docs/screenshots/classes.png" alt="Каталог занятий с фильтрами" width="860"></p>
-<p align="center"><img src="docs/screenshots/home.png" alt="Главная: выбор направления и ближайшие занятия" width="860"></p>
+<table align="center">
+  <tr>
+    <td width="50%"><img src="docs/screenshots/classes.png" alt="Каталог занятий с фильтрами"></td>
+    <td width="50%"><img src="docs/screenshots/home.png" alt="Главная: выбор направления и ближайшие занятия"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/checkout.png" alt="Оплата картой-заглушкой с удержанием места на 15 минут"></td>
+    <td width="50%"><img src="docs/screenshots/assistant.png" alt="GenAI-помощник отвечает по реальному расписанию и предлагает занятия для записи"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/class.png" alt="Страница занятия со свободными местами"></td>
+    <td width="50%"><img src="docs/screenshots/bookings.png" alt="Мои записи со статусами и отменой"></td>
+  </tr>
+</table>
 
 ## Запуск
 
