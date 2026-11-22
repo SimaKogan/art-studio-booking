@@ -1,5 +1,7 @@
 # Art Studio Booking
 
+<p align="center"><img src="docs/social-preview.png" alt="Art Studio Booking: book art classes with a GenAI schedule assistant" width="860"></p>
+
 Full-stack booking platform for a small art studio: browse classes, hold seats, pay (simulated), manage the schedule in an admin panel, and ask a GenAI assistant what to book.
 
 **Stack:** Java 17 · Spring Boot 3.3 · Spring Security (JWT) · JPA · H2 / PostgreSQL · React 18 · TypeScript · Vite · Vertex AI (Gemini)
@@ -57,20 +59,7 @@ Use any future expiry (for example `12/40`) and any 3-digit CVC. Nothing leaves 
 
 ## Architecture
 
-```mermaid
-flowchart LR
-  UI[React + TypeScript] -- REST + JWT --> API[Spring Boot API]
-  API --> SVC[Services: classes, bookings, payments, stats]
-  SVC --> DB[(PostgreSQL / H2)]
-  SVC --> GW[PaymentGateway]
-  GW --> MOCK[MockPaymentGateway]
-  API --> AI[ScheduleAssistant]
-  AI --> RET[ClassRetriever]
-  RET --> SVC
-  AI --> LLM{LlmClient}
-  LLM --> V[Vertex AI Gemini]
-  LLM --> L[Local fallback]
-```
+<p align="center"><img src="docs/architecture.png" alt="Architecture: React UI, Spring Boot API, PostgreSQL, payment stub and the retrieval-based assistant" width="860"></p>
 
 ### Booking lifecycle
 

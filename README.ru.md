@@ -1,5 +1,7 @@
 # Art Studio Booking
 
+<p align="center"><img src="docs/social-preview.png" alt="Art Studio Booking" width="860"></p>
+
 Полноценная система записи для небольшой арт-студии: каталог занятий, бронирование мест, оплата (заглушка), админ-панель и GenAI-помощник, который подсказывает, на что записаться.
 
 **Стек:** Java 17 · Spring Boot 3.3 · Spring Security (JWT) · JPA · H2 / PostgreSQL · React 18 · TypeScript · Vite · Vertex AI (Gemini)
