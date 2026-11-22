@@ -1,0 +1,14 @@
+# build output
+backend/target/
+frontend/node_modules/
+frontend/dist/
+# env and secrets
+.env
+*.pem
+*-sa.json
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+__MACOSX/

@@ -1,0 +1,45 @@
+# One command: docker compose up --build   ->  http://localhost:8081
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: artstudio
+      POSTGRES_USER: artstudio
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-artstudio}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U artstudio"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  backend:
+    build: ./backend
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_URL: jdbc:postgresql://db:5432/artstudio
+      DB_USER: artstudio
+      DB_PASSWORD: ${DB_PASSWORD:-artstudio}
+      JWT_SECRET: ${JWT_SECRET:-change-me-change-me-change-me-change-me}
+      SEED_DEMO_DATA: ${SEED_DEMO_DATA:-true}
+      AI_PROVIDER: ${AI_PROVIDER:-local}
+      VERTEX_PROJECT_ID: ${VERTEX_PROJECT_ID:-}
+      VERTEX_LOCATION: ${VERTEX_LOCATION:-us-central1}
+      VERTEX_MODEL: ${VERTEX_MODEL:-gemini-2.5-flash}
+      # For Vertex AI from a container, mount a service-account key and point ADC at it:
+      # GOOGLE_APPLICATION_CREDENTIALS: /secrets/sa.json
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    ports:
+      - "8081:80"
+
+volumes:
+  pgdata:
